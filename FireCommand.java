@@ -1,4 +1,4 @@
-package commanddesignpattern;
+package CommandDesignPattern;
 
 public class FireCommand implements Command {
     private Robot robot;

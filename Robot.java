@@ -1,4 +1,4 @@
-package commanddesignpattern;
+package CommandDesignPattern;
 
 public class Robot {
     public Robot(String name){

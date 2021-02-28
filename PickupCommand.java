@@ -1,4 +1,4 @@
-package commanddesignpattern;
+package CommandDesignPattern;
 
 public class PickupCommand implements Command {
     private Robot robot;

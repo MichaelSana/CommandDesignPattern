@@ -1,5 +1,4 @@
-package commanddesignpattern;
-
+package CommandDesignPattern;
 public class HealCommand implements Command{
     private Robot robot;
 

@@ -1,4 +1,4 @@
-
+package CommandDesignPattern;
 import java.util.Scanner;
 
 public class RobotDriver {
@@ -13,7 +13,7 @@ public class RobotDriver {
 		while(true) {
 			String command = getInputLine("Enter Command", in);
 			if(command.contentEquals("quit"))break;
-			inHandler.inputEntered(command);
+			inHandler.InputEntered(command);
 		}
 		
 		System.out.println("Goodbye");
