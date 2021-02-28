@@ -1,16 +1,18 @@
 package commanddesignpattern;
 import java.util.HashMap;
 public class InputHandler {
-    private HashMap<String, Command> commands = new HashMap<>();
-    commands.put("pickup", PickupCommand);
-    commands.put("jump", JumpCommand);
-    commands.put("fire", FireCommand);
-    commands.put("heal", HealCommand);
+    private HashMap<String, Command> commands = new HashMap<String, Command>();
 
     public InputHandler(Robot robot){
-
+        commands.put("pickup", PickupCommand);
+        commands.put("jump", JumpCommand);
+        commands.put("fire", FireCommand);
+        commands.put("heal", HealCommand);
     }
     public void InputEntered(String data){
-        
+        if (commands.containsKey(data)) {
+            Command command = commands.get(data);
+            command.execute();
+        }
     }
 }
