@@ -1,12 +1,13 @@
-package CommandDesignPattern;
+package commanddesignpattern;
 
 public class FireCommand implements Command {
+    private Robot robot;
     public FireCommand(Robot robot){
-        
+        this.robot = robot;
     }
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
+        robot.fire();
 
     }
     

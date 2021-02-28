@@ -1,13 +1,14 @@
-package CommandDesignPattern;
+package commanddesignpattern;
 
 public class HealCommand implements Command{
+    private Robot robot;
+
     public HealCommand(Robot robot){
-        
+        this.robot = robot;
     }
     @Override
     public void execute() {
-        // TODO Auto-generated method stub
-
+        robot.heal();
     }
     
 }
